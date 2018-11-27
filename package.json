@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/yxzh614/ql-platform-ui/issues"
   },
-  "homepage": "https://github.com/yxzh614/ql-platform-ui#readme"
+  "homepage": "https://github.com/yxzh614/ql-platform-ui#readme",
+  "devDependencies": {
+    "webpack": "^4.26.1",
+    "webpack-cli": "^3.1.2"
+  },
+  "dependencies": {
+    "react": "^16.6.3"
+  }
 }
