@@ -1,0 +1,19 @@
+{
+  "name": "ql-platform-ui",
+  "version": "1.0.0",
+  "description": "react component",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yxzh614/ql-platform-ui.git"
+  },
+  "author": "yxzh614",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yxzh614/ql-platform-ui/issues"
+  },
+  "homepage": "https://github.com/yxzh614/ql-platform-ui#readme"
+}
