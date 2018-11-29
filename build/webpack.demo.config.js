@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
 
 module.exports = {
-  entry: './src/index.js',
+  entry: './demo/demo.js',
   mode: 'development',
   output: {
     filename: 'bundle.js',
@@ -34,6 +34,13 @@ module.exports = {
         exclude: /node_modules/,
         use:[
           'babel-loader'
+        ]
+      },
+      {
+        test: /\.css$/,
+        use:[
+          'style-loader',
+          'css-loader'
         ]
       }
     ]

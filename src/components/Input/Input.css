@@ -1,0 +1,13 @@
+.ql-input {
+  height: 28px;
+  line-height: 28px;
+  border: 1px solid #dfdfdf;
+  cursor: text;
+  color: #222222;
+  border-radius: 4px;
+  padding-left: 4px;
+}
+.ql-input:focus {
+  border: 1px solid #0B1746;
+  outline: 0;
+}
