@@ -1,5 +1,4 @@
 # ql-platform-ui
 components for sylu
 
-：分包
-：demo
+打包发布：npm run lib
