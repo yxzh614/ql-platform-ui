@@ -1,4 +1,5 @@
 # ql-platform-ui
+![](https://img.shields.io/bundlephobia/min/ql-platform-ui.svg?style=flat)
 components for sylu
 
 from 沈阳理工大学琴理工作室
