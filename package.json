@@ -1,7 +1,8 @@
 {
   "name": "ql-platform-ui",
-  "version": "1.0.0",
+  "version": "0.1.2",
   "description": "react component",
+  "main": "dist/ql-platform-ui.js",
   "scripts": {
     "test": "test",
     "example": "webpack --config build/webpack.demo.config.js",
@@ -19,21 +20,19 @@
   },
   "homepage": "https://github.com/yxzh614/ql-platform-ui#readme",
   "devDependencies": {
-    "@babel/cli": "^7.1.5",
-    "@babel/core": "^7.1.6",
-    "@babel/preset-env": "^7.1.6",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
     "@babel/preset-react": "^7.0.0",
-    "babel-loader": "^8.0.4",
-    "clean-webpack-plugin": "^1.0.0",
-    "css-loader": "^1.0.1",
+    "babel-loader": "^8.0.5",
+    "clean-webpack-plugin": "^1.0.1",
+    "css-loader": "^2.1.0",
     "html-webpack-plugin": "^3.2.0",
     "style-loader": "^0.23.1",
-    "webpack": "^4.26.1",
-    "webpack-cli": "^3.1.2",
-    "webpack-dev-server": "^3.1.10"
+    "webpack": "^4.29.3",
+    "webpack-cli": "^3.2.3"
   },
   "dependencies": {
-    "react": "^16.6.3",
-    "react-dom": "^16.6.3"
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1"
   }
 }
