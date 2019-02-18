@@ -2,6 +2,7 @@
 ![](https://img.shields.io/bundlephobia/min/ql-platform-ui.svg?style=flat)
 ![](https://img.shields.io/npm/dw/ql-platform-ui.svg?style=flat)
 ![](https://img.shields.io/npm/l/ql-platform-ui.svg?style=flat)
+![](https://img.shields.io/npm/v/ql-platform-ui.svg?style=flat)
 
 components for sylu
 
