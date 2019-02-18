@@ -11,4 +11,4 @@ from 沈阳理工大学琴理工作室
 ## 使用
 
 ``` javascript
-import Button from 'ql-platform-ui'
+import { Button } from 'ql-platform-ui'
