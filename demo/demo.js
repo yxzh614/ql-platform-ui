@@ -14,7 +14,7 @@ const inner = (
       输入框：<Input></Input>
     </div>
     <div className="demo-block">
-      按钮：<Button></Button>
+      按钮：<Button onClick={(e)=>{console.log(e)}}></Button>
     </div>
   </div>
 )
