@@ -5,13 +5,13 @@ module.exports = {
   entry: './src/index.js',
   mode: 'production',
   output: {
-    filename: 'ql-platform-ui.js',
-    path: path.resolve(__dirname, 'dist'),
-    library: 'qlPlatformUi',
+    filename: 'index.js',
+    path: path.resolve(__dirname, 'lib'),
+    library: 'ql-platform-ui',
     libraryTarget: 'umd'
   },
   plugins: [
-    new CleanWebpackPlugin(['dist'])
+    new CleanWebpackPlugin(['lib'])
   ],
   resolve: {
     alias: {
@@ -21,16 +21,12 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.css$/,
-        use:[
-          'style-loader',
-          'css-loader'
-        ]
-      },
-      { test: /\.js$/,
-        exclude: /node_modules/,
-        loader: "babel-loader"
+        test: /\.js$/,
+        use: [
+          'babel-loader'
+        ],
+        exclude: /node_modules/
       }
     ]
-  }
+  },
 };
