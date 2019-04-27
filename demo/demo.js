@@ -16,6 +16,9 @@ const inner = (
     <div className="demo-block">
       按钮：<Button onClick={(e)=>{console.log(e)}}></Button>
     </div>
+    <div className="demo-block">
+    进度条：<Button onClick={(e)=>{console.log(e)}}></Button>
+    </div>
   </div>
 )
 ReactDOM.render(
