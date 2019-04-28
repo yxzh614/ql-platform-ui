@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom'
 import Input from '../src/components/Input/Input'
-import Button from '../src/components/Button/Button'
+import Button from '../src/components/Button/Button.tsx'
 import CheckBox from '../src/components/CheckBox/CheckBox'
 
 import './demo.less'
