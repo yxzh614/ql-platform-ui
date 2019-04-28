@@ -16,14 +16,17 @@ export default class extends React.Component {
       text,
       style,
       className,
-      disabled
+      disabled,
+      type,
+      size
     } = this.props
     return (
       <button
         className={classnames(
           className,
           'ql-button',
-          disabled ? 'disabled' : ''
+          disabled ? 'disabled' : '',
+          type
         )}
         style={style}
         onClick={this.handleClick.bind(this)}

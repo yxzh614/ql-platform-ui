@@ -6,13 +6,28 @@
   padding: 0 20px;
   height: 28px;
   line-height: 28px;
-  border: 1px solid #0B1746;
+  border: 1px solid #444444;
   border-radius: 4px;
   background: white;
-  :active {
+  &:focus {
     outline: 0;
-    background: rgba(11, 23, 70, 0.164)
-  }:focus {
-    outline: 0;
+  }
+  &:active:focus {
+    box-shadow: 0 0 0 2px #0000002a;
+  }
+
+  &.primary {
+    background: #6fa3f8;
+    color: white;
+    border: 1px solid #6fa3f8;
+    &:active:focus {
+      box-shadow: 0 0 0 2px #6fa3f82a;
+      background: #82b1fd;
+      border: 1px solid #82b1fd;
+    }
+  }
+
+  &.m {
+
   }
 }

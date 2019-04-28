@@ -3,11 +3,13 @@ import {useState} from 'react'
 export default function (props) {
     const [count, setCount] = useState(false)
     const {
-        onChange
+        onChange,
+        children
     } = props
     return (
         <div>
-            <input type={'checkbox'} value={count} onClick={(e) => {onChange(e, !count);setCount(!count)}}/>
+            <input className={'ql-checkbox'} type={'checkbox'} value={count} onClick={(e) => {onChange(e, !count);setCount(!count)}}/>
+            {children}
         </div>
     )
 }
