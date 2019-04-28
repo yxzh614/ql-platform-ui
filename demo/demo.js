@@ -11,7 +11,9 @@ document.body.appendChild(x)
 const inner = (
   <div>
     <div className="demo-block">
-      输入框：<Input></Input>
+      <div className="demo-input-type">
+        输入框：<Input type="textarea" />
+      </div>
     </div>
     <div className="demo-block">
       <div className="demo-button-type">
@@ -21,15 +23,15 @@ const inner = (
       </div>
       <div className="demo-button-size">
         按钮大小：
-        <Button onClick={(e)=>{console.log('你点击了按钮', e)}}></Button>
-        <Button type="primary" size="m" onClick={(e)=>{console.log('你点击了按钮', e)}}></Button>
+        <Button size="m" onClick={(e)=>{console.log('你点击了按钮', e)}}></Button>
+        <Button size="s" type="primary" onClick={(e)=>{console.log('你点击了按钮', e)}}></Button>
       </div>
     </div>
     <div className="demo-block">
     进度条：<Button onClick={(e)=>{console.log(e)}}></Button>
     </div>
     <div>
-  <CheckBox onChange={(e,value)=>{console.log(e,value)}}>{'checkbox label'}</CheckBox>
+    <CheckBox onChange={(e,value)=>{console.log(e,value)}}>{'checkbox label'}</CheckBox>
     </div>
   </div>
 )

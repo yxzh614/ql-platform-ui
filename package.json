@@ -1,13 +1,14 @@
 {
   "name": "ql-platform-ui",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "react component",
   "main": "build/lib/index.js",
   "scripts": {
     "test": "test",
     "example": "webpack --config build/webpack.demo.config.js",
     "dev": "webpack-dev-server --open --config build/webpack.demo.config.js",
-    "build": "webpack --config build/webpack.prod.config.js"
+    "build": "webpack --config build/webpack.prod.config.js",
+    "pub": "npm run build & npm publish"
   },
   "files": [
     "dist",

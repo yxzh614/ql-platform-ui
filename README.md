@@ -34,3 +34,7 @@ import { Button } from 'ql-platform-ui'
 11. breadcrumb
 12. select
 13. modal
+
+## Publish
+
+npm run build & npm publish
