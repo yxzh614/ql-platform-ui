@@ -14,6 +14,7 @@ module.exports = {
     new CleanWebpackPlugin(['lib'])
   ],
   resolve: {
+    extensions: ['.js', '.css', '.less', '.ejs', 'ts'],
     alias: {
       '@': path.resolve(__dirname, './packages')
     }
@@ -36,7 +37,7 @@ module.exports = {
         ]
       },
       { 
-        test: /\.js$/,
+        test: /\.(ts|js)x?$/,
         use: [
           'babel-loader'
         ],

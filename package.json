@@ -1,6 +1,6 @@
 {
   "name": "ql-platform-ui",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "react component",
   "main": "build/lib/index.js",
   "scripts": {
