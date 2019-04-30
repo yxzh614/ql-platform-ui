@@ -25,6 +25,7 @@ const inner = (
         按钮大小：
         <Button size="m" onClick={(e)=>{console.log('你点击了按钮', e)}}></Button>
         <Button size="s" type="primary" onClick={(e)=>{console.log('你点击了按钮', e)}}></Button>
+        <Button className={'round'} size="s" type="primary" onClick={(e)=>{console.log('你点击了按钮', e)}}></Button>
       </div>
     </div>
     <div className="demo-block">
