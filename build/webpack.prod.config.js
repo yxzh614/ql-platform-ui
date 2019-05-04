@@ -5,15 +5,16 @@ module.exports = {
   entry: './src/index.js',
   mode: 'production',
   output: {
-    filename: 'ql-platform-ui.js',
-    path: path.resolve(__dirname, 'dist'),
-    library: 'qlPlatformUi',
+    filename: 'index.js',
+    path: path.resolve(__dirname, 'lib'),
+    library: 'ql-platform-ui',
     libraryTarget: 'umd'
   },
   plugins: [
-    new CleanWebpackPlugin(['dist'])
+    new CleanWebpackPlugin(['lib'])
   ],
   resolve: {
+    extensions: ['.js', '.css', '.less', '.ejs', 'ts'],
     alias: {
       '@': path.resolve(__dirname, './packages')
     }
@@ -21,16 +22,27 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.less$/,
+        use:[
+          'style-loader',
+          'css-loader',
+          'less-loader'
+        ]
+      },
+      {
         test: /\.css$/,
         use:[
           'style-loader',
           'css-loader'
         ]
       },
-      { test: /\.js$/,
-        exclude: /node_modules/,
-        loader: "babel-loader"
+      { 
+        test: /\.(ts|js)x?$/,
+        use: [
+          'babel-loader'
+        ],
+        exclude: /node_modules/
       }
     ]
-  }
+  },
 };
