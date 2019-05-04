@@ -15,6 +15,7 @@ export default class extends React.Component<ButtonProps> {
   constructor(props: ButtonProps) {
     super(props)
   }
+
   handleClick: React.MouseEventHandler<HTMLButtonElement> = (e) => {
     
     const { onClick } = this.props;
@@ -22,6 +23,7 @@ export default class extends React.Component<ButtonProps> {
       (onClick as React.MouseEventHandler<HTMLButtonElement>)(e)
     }
   }
+  
   render() {
     const {
       text,

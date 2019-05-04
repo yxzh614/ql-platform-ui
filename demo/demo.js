@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom'
-import Input from '../src/components/Input/Input'
+import Input from '../src/components/Input/Input.tsx'
+import InputDemo from './Input/index'
 import Button from '../src/components/Button/Button.tsx'
 import CheckBox from '../src/components/CheckBox/CheckBox'
 
@@ -12,7 +13,7 @@ const inner = (
   <div>
     <div className="demo-block">
       <div className="demo-input-type">
-        输入框：<Input type="textarea" />
+        输入框:<InputDemo></InputDemo>
       </div>
     </div>
     <div className="demo-block">
