@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom'
 import Input from '../src/components/Input/Input.tsx'
 import InputDemo from './Input/index'
+import ProgressDemo from './Progress/index'
 import Button from '../src/components/Button/Button.tsx'
 import CheckBox from '../src/components/CheckBox/CheckBox'
 
@@ -30,7 +31,7 @@ const inner = (
       </div>
     </div>
     <div className="demo-block">
-    进度条：<Button onClick={(e)=>{console.log(e)}}></Button>
+    进度条：<ProgressDemo />
     </div>
     <div>
     <CheckBox onChange={(e,value)=>{console.log(e,value)}}>{'checkbox label'}</CheckBox>

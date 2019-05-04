@@ -1,11 +1,14 @@
 import * as React from 'react'
 import './Input.less'
+import classnames from 'classnames'
 
 export interface InputProps {
   type: string
   disabled: boolean
   value: string
   defaultValue: string
+  borderStyle: string
+  className: string
   onChange: React.ChangeEventHandler<HTMLInputElement | HTMLTextAreaElement>
 }
 
@@ -19,6 +22,7 @@ export default class extends React.Component<InputProps> {
     }
     return null
   }
+
   constructor (props: InputProps) {
     super(props)
     const value = props.value || props.defaultValue
@@ -32,11 +36,18 @@ export default class extends React.Component<InputProps> {
   render() {
     const {
       type,
+      className,
+      disabled
     } = this.props
-    const { value } = this.state;
+    const { value } = this.state; 
     if(type === 'textarea') {
       return (
-        <textarea className="ql-input textarea" onChange={this.handleChange} value={value}/>
+        <textarea className={classnames(
+          className,
+          'ql-button',
+          'textarea',
+          disabled ? 'disabled' : ''
+        )} onChange={this.handleChange} value={value}/>
       )
     }
 
