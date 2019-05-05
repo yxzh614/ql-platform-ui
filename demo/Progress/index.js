@@ -8,11 +8,12 @@ export default class extends React.Component {
     }
 
     componentDidMount () {
-        setTimeout(() => {this.setState({progress: Math.random()})}, 1000)        
+        setInterval(() => {this.setState({progress: Math.random()})}, 1500)        
     }
     render () {
         return (
-            <div>
+            <div className="demo-block">
+                <h2>进度条(Progress)</h2>
                 <Progress progress={this.state.progress} />
             </div>
         )
