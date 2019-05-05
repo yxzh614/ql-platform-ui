@@ -6,7 +6,7 @@ export default class extends React.Component {
     render () {
         return (
             <div className="demo-block">
-            <h2>按钮(Button)</h2>
+            <h2 id="ql-button">按钮(Button)</h2>
               <div className="demo-button-type">
                 按钮主题：
                 <Button onClick={(e)=>{console.log('你点击了按钮', e)}}></Button>

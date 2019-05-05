@@ -12,9 +12,9 @@ export default class extends React.Component {
 
     render () {
         return (
-            <div>
+            <div className="demo-block">
+                <h2 id="ql-input">输入框(Input)</h2>
                 <div className="demo-input-block">
-                    <h2>输入框(Input)</h2>
                     <h3>textarea输入框</h3>
                     <Input type='textarea' onChange={(e, value) => {this.setState({textarea: e.target.value})}} value={this.state.textarea} />
                 </div>

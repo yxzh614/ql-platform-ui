@@ -13,7 +13,7 @@ export default class extends React.Component {
     render () {
         return (
             <div className="demo-block">
-                <h2>进度条(Progress)</h2>
+                <h2 id="ql-progress">进度条(Progress)</h2>
                 <Progress progress={this.state.progress} />
             </div>
         )

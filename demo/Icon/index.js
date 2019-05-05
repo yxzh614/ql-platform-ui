@@ -13,8 +13,8 @@ export default class extends React.Component {
     render () {
         return (
             <div className="demo-block">
-                <h2>图标(Icon)</h2>
-                <Icon type="home" />
+                <h2 id="ql-icon">图标(Icon)</h2>
+                <Icon type="close" />
             </div>
         )
     }
