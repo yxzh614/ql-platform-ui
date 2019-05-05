@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom'
-import Input from '../../src/components/Input/Input.tsx'
+import Input from '../../src/components/Input/index.tsx'
 
 export default class extends React.Component {
     state = {

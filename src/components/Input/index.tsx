@@ -1,7 +1,7 @@
 import * as React from 'react'
 import './Input.less'
 import classnames from 'classnames'
-import Icon from '../Icon/Icon.tsx'
+import Icon from '../Icon/index.tsx'
 
 export interface InputProps {
   type: string

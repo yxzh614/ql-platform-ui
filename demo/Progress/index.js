@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom'
-import Progress from '../../src/components/Progress/Progress.tsx'
+import Progress from '../../src/components/Progress/index.tsx'
 
 export default class extends React.Component {
     state = {

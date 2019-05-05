@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom'
-import Input from '../../src/components/Input/Input.tsx'
-import Icon from '../../src/components/Icon/Icon.tsx'
+import Input from '../../src/components/Input/index.tsx'
+import Icon from '../../src/components/Icon/index.tsx'
 
 export default class extends React.Component {
     state = {

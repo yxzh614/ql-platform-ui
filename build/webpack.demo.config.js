@@ -10,7 +10,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist')
   },
   resolve: {
-      extensions: ['', '.js', '.css', '.less', '.ejs', 'ts', 'tsx']     // 定义在该数组中的文件后缀不需要显示给出
+      extensions: ['', '.js', '.css', '.less', '.ts', '.tsx']     // 定义在该数组中的文件后缀不需要显示给出
   },
   plugins: [
     new CleanWebpackPlugin(['dist']),

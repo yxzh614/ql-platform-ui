@@ -4,7 +4,7 @@ import InputDemo from './Input/index'
 import ProgressDemo from './Progress/index'
 import ButtonDemo from './Button/index'
 import IconDemo from './Icon/index'
-import Button from '../src/components/Button/Button.tsx'
+import Button from '../src/components/Button/index.tsx'
 import CheckBox from '../src/components/CheckBox/CheckBox'
 
 import './demo.less'
