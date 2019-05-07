@@ -24,7 +24,7 @@ import { Button } from 'ql-platform-ui'
 1. progress
 2. card
 3. button
-4. nav
+4. menu
 5. upload
 6. input
 7. text

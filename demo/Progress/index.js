@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom'
-import Progress from '../../src/components/Progress/Progress.tsx'
+import Progress from '../../src/components/Progress/index.tsx'
 
 export default class extends React.Component {
     state = {
@@ -8,11 +8,12 @@ export default class extends React.Component {
     }
 
     componentDidMount () {
-        setTimeout(() => {this.setState({progress: Math.random()})}, 1000)        
+        setInterval(() => {this.setState({progress: Math.random()})}, 1500)        
     }
     render () {
         return (
-            <div>
+            <div className="demo-block">
+                <h2 id="ql-progress">进度条(Progress)</h2>
                 <Progress progress={this.state.progress} />
             </div>
         )
