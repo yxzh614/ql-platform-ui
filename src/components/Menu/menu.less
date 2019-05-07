@@ -1,0 +1,22 @@
+.ql-menu {
+  .menu-label {
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px solid grey;
+    user-select:none;
+    &:hover {
+      color: green;
+      &:active {
+        background: grey;
+      }
+    }
+  }
+  .sub-menu {
+    padding-left: 15px;
+    .hide-children {
+      height: 0;
+      overflow: hidden;
+      transition: height 0.5s;
+    }
+  }
+}

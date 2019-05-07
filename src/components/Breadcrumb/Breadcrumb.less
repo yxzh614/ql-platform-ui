@@ -1,0 +1,21 @@
+.ql-breadcrumb {
+    .breadcrumb-item {
+        display: inline-block;
+        .breadcrumb-label {
+            user-select: none;
+            &:hover {
+                color: rgb(96, 212, 212);
+                &:active {
+                    color: rgb(144, 228, 228);
+                }
+            }
+        }
+        .breadcrumb-seperator {
+            user-select: none;
+            margin: 0 4px;
+        }
+        .breadcrumb-seperator-hide {
+            display: none;
+        }
+    }
+}
