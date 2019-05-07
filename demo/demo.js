@@ -45,7 +45,7 @@ const inner = (
       <ProgressDemo />
       <PopperDemo />
       <BreadcrumbDemo />
-      <CheckBox label={'asdasd'} onChange={(e,value)=>{console.log(e,value)}} label="checkbox label"/>
+      <CheckBox refid={'asdasd'} onChange={(e,value)=>{console.log(e,value)}} label="checkbox label"/>
     </div>
   </div>
 )

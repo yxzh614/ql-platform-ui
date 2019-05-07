@@ -4,7 +4,7 @@ import {useState} from 'react'
 export interface CheckboxProps {
     label: string,
     onChange: React.ChangeEventHandler,
-    key: string 
+    refid: string 
 }
 
 export default function (props: CheckboxProps) {
@@ -12,12 +12,12 @@ export default function (props: CheckboxProps) {
     const {
         onChange,
         label,
-        key
+        refid
     } = props
     return (
         <div>
-            <input id={key} className={'ql-checkbox'} type={'checkbox'} checked={check} onChange={(e) => {onChange(e); setCount(!check)}}/>
-            <label htmlFor={key}>{label}</label>
+            <input id={refid} className={'ql-checkbox'} type={'checkbox'} checked={check} onChange={(e) => {onChange(e); setCount(!check)}}/>
+            <label htmlFor={refid}>{label}</label>
         </div>
     )
 }
