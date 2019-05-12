@@ -1,0 +1,30 @@
+.ql-checkbox {
+    display: inline-block;
+    line-height: 12px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 2px;
+    .ql-checkbox-inner {
+        display: inline-block;
+        box-sizing: border-box;
+        font-size: 8px;
+        padding: 1px;
+        width: 14px;
+        height: 14px;
+        border-radius: 2px;
+        background: #bbbbbb;
+        color: #bbbbbb;
+        transition: all 0.15s;
+
+        &.checked {
+            color: white;
+            background: #598fe6;
+        }
+    }
+    .ql-checkbox-label {
+        padding-left: 4px;
+        line-height: 12px;
+        user-select: none;
+        color: black;
+    }
+}

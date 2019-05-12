@@ -1,0 +1,87 @@
+.ql-popper {
+    position: relative;
+    display: inline-block;
+    .ql-popper-popout {
+        position: absolute;
+        .ql-popper-popper {
+            border-radius: 4px;
+            background: white;
+            border: 1px solid #858585;
+            box-shadow: 0 0 2px 0 #0000002a;
+            .ql-popper-container {
+                padding: 10px;
+            }
+            .ql-popper-arrow {
+                border-color: #858585;
+                margin-left: 0;
+                margin-right: 0;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                position: absolute;
+            }
+        }
+        &.left {
+            transform: translate(-100%, -50%);
+            top: 50%;
+            .ql-popper-popper {
+                margin-right: 5px;
+            }
+            .ql-popper-arrow {
+                border-width: 5px 0 5px 5px;
+                border-top-color: transparent;
+                border-right-color: transparent;
+                border-bottom-color: transparent;
+                top: calc(50% - 5px);
+                right: 1px;
+            }
+        }
+        &.right {
+            transform: translate(100%, -50%);
+            top: 50%;
+            right: 0;
+            .ql-popper-popper {
+                margin-left: 5px;
+            }
+            .ql-popper-arrow {
+                border-width: 5px 5px 5px 0;
+                border-top-color: transparent;
+                border-left-color: transparent;
+                border-bottom-color: transparent;
+                top: calc(50% - 5px);
+                left: 0;
+            }
+        }
+        &.top {
+            transform: translate(-50%, -100%);
+            left: 50%;
+            .ql-popper-popper {
+                margin-bottom: 5px;
+            }
+            .ql-popper-arrow {
+                border-width: 5px 5px 0 5px;
+                border-left-color: transparent;
+                border-right-color: transparent;
+                border-bottom-color: transparent;
+                left: calc(50% - 5px);
+                bottom: 1px;
+            }
+        }
+        &.bottom {
+            transform: translate(-50%, 100%);
+            left: 50%;
+            bottom: 0;
+            .ql-popper-popper {
+                margin-top: 5px;
+            }
+            .ql-popper-arrow {
+                border-width: 0 5px 5px 5px;
+                border-left-color: transparent;
+                border-right-color: transparent;
+                border-top-color: transparent;
+                left: calc(50% - 5px);
+                top: 1px;
+            }
+        }
+    }
+}

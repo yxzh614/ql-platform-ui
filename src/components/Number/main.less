@@ -1,0 +1,44 @@
+.ql-number-warpper {
+    display: inline-block;
+    box-shadow: 0 0 2px 0 #0000002a;
+    .ql-number {
+        height: 28px;
+        line-height: 28px;
+        border: 1px solid grey;
+        cursor: text;
+        color: #222222;
+        padding: 0;
+        padding-left: 4px;
+        &:focus {
+            box-shadow: 0 0 0 2px #0000002a;
+            outline: 0;
+        }
+    }
+    .ql-number-fix {
+        box-sizing: content-box;
+        vertical-align: middle;
+        padding: 0;
+        height: 28px;
+        width: 40px;
+        font-size: 20px;
+        line-height: 28px;
+        border: 1px solid grey;
+        background: white;
+        z-index: 2;
+        background: #0000002a;
+        &:focus {
+            box-shadow: 0 0 0 2px #0000002a;
+            outline: 0;
+        }
+        &.prefix {
+            border-right: 0;
+            border-top-left-radius: 4px;
+            border-bottom-left-radius: 4px;
+        }
+        &.suffix {
+            border-left: 0;
+            border-top-right-radius: 4px;
+            border-bottom-right-radius: 4px;
+        }
+    }
+}
