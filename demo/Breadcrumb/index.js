@@ -20,7 +20,10 @@ export default class extends React.Component {
     render () {
         return (
             <div className="demo-block">
-            <h2 id="ql-button">面包屑(Breadcrumb)</h2>
+            <h2 id="ql-breadcrumb">面包屑(Breadcrumb)</h2>
+                <div className="demo-info">
+                    面包屑导航
+                </div>
             <Breadcrumb datasource={this.state.datasource} onClick={(e, key) => {console.log(key)}}/>
             </div>
         )

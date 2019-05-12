@@ -22,23 +22,26 @@ import './demo.less'
 const x = document.createElement('div')
 document.body.appendChild(x)
 
-const MenuDatasource = [
-  {
-    label: 'Progress',
-    children: [
-      {
-        label: 'Progress',
-        handler: () => {window.location = '#ql-progress'},
-        children: [
-          {
-            label: 'Progress',
-            handler: () => {window.location = '#ql-progress'},
-          }
-        ]
-      }
-    ]
-  }
+function toPos () {
+  window.location = `#ql-${this.label}`
+}
+
+const components = [
+  'breadcrumb', 'button', 'card', 'checkbox', 'icon',
+  'input', 'modal', 'number', 'popper', 'progress',
+  'radio',
+  'select', 'steps', 'timeline'
 ]
+
+const MenuDatasource = [
+]
+
+components.forEach(item => {
+  MenuDatasource.push({
+    label: item,
+    handler: toPos
+  })
+})
 
 const inner = (
   <div className="ql-demo">
@@ -46,20 +49,23 @@ const inner = (
       <Menu type="side" datasource={MenuDatasource} />
     </div>
     <div className="demo-main">
-      <InputDemo />
-      <IconDemo />
-      <ButtonDemo />
-      <ProgressDemo />
-      <PopperDemo />
-      <SelectDemo />
+      <div className="demo-title">
+        ql-platform-ui是一套基于React实现的组件库
+      </div>
       <BreadcrumbDemo />
+      <ButtonDemo />
       <CardDemo />
       <CheckboxDemo />
+      <IconDemo />
+      <InputDemo />
+      <ModalDemo />
+      <NumberDemo />
+      <PopperDemo />
+      <ProgressDemo />
       <RadioDemo />
+      <SelectDemo />
       <StepsDemo />
       <TimelineDemo />
-      <NumberDemo />
-      <ModalDemo />
     </div>
   </div>
 )

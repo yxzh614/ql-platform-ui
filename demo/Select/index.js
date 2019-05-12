@@ -23,7 +23,10 @@ export default class extends React.Component {
     render () {
         return (
             <div className="demo-block">
-            <h2 id="ql-button">选择(Select)</h2>
+            <h2 id="ql-select">选择(Select)</h2>
+                    <div className="demo-info">
+                      从下拉选择中选择内容
+                    </div>
                 <Select value={this.state.value} options={options} handleChange={(e, value) => {console.log(value);this.setState({value})}}/>
             </div>
         )
