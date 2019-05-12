@@ -1,0 +1,24 @@
+import React from 'react';
+import ReactDOM from 'react-dom'
+import Modal from '../../src/components/Modal/index.tsx'
+import Button from '../../src/components/Button/index.tsx'
+
+
+export default class extends React.Component {
+
+    state = {
+        visable: false
+    }
+
+    render () {
+        return (
+            <div className="demo-block">
+            <h2 id="ql-steps">模态框(modal)</h2>
+                <Button text={'显示'} onClick={(e) => {this.setState({visable: true})}}></Button>
+                <Modal header={'标题'} visable={this.state.visable} onClose={() => {this.setState({visable: false})}}>
+                    <div>这里是Modal</div>
+                </Modal>
+            </div>
+        )
+    }
+}

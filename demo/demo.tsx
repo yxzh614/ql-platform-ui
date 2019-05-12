@@ -14,6 +14,7 @@ import SelectDemo from './Select'
 import StepsDemo from './Steps'
 import TimelineDemo from './Timeline'
 import NumberDemo from './Number'
+import ModalDemo from './Modal'
 
 import Menu from '../src/components/Menu'
 import './demo.less'
@@ -58,6 +59,7 @@ const inner = (
       <StepsDemo />
       <TimelineDemo />
       <NumberDemo />
+      <ModalDemo />
     </div>
   </div>
 )
