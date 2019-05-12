@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Breadcrumb 1`] = `
+<div
+  className="ql-breadcrumb"
+>
+  <div
+    className="breadcrumb-item"
+  >
+    <span
+      className="breadcrumb-seperator breadcrumb-seperator-hide"
+    >
+      /
+    </span>
+    <span
+      className="breadcrumb-label"
+      onClick={[Function]}
+    >
+      主页
+    </span>
+  </div>
+  <div
+    className="breadcrumb-item"
+  >
+    <span
+      className="breadcrumb-seperator"
+    >
+      /
+    </span>
+    <span
+      className="breadcrumb-label"
+      onClick={[Function]}
+    >
+      个人信息
+    </span>
+  </div>
+  <div
+    className="breadcrumb-item"
+  >
+    <span
+      className="breadcrumb-seperator"
+    >
+      /
+    </span>
+    <span
+      className="breadcrumb-label"
+      onClick={[Function]}
+    >
+      修改密码
+    </span>
+  </div>
+</div>
+`;

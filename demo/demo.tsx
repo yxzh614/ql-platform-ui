@@ -7,9 +7,15 @@ import ButtonDemo from './Button'
 import IconDemo from './Icon'
 import PopperDemo from './Popper'
 import BreadcrumbDemo from './Breadcrumb'
+import CardDemo from './Card'
+import CheckboxDemo from './CheckBox'
+import RadioDemo from './Radio'
+import SelectDemo from './Select'
+import StepsDemo from './Steps'
+import TimelineDemo from './Timeline'
+import NumberDemo from './Number'
 
-import Menu from '../src/components/Menu/index.tsx'
-import CheckBox from '../src/components/CheckBox/index.tsx'
+import Menu from '../src/components/Menu'
 import './demo.less'
 
 const x = document.createElement('div')
@@ -44,8 +50,14 @@ const inner = (
       <ButtonDemo />
       <ProgressDemo />
       <PopperDemo />
+      <SelectDemo />
       <BreadcrumbDemo />
-      <CheckBox refid={'asdasd'} onChange={(e,value)=>{console.log(e,value)}} label="checkbox label"/>
+      <CardDemo />
+      <CheckboxDemo />
+      <RadioDemo />
+      <StepsDemo />
+      <TimelineDemo />
+      <NumberDemo />
     </div>
   </div>
 )

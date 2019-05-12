@@ -1,0 +1,49 @@
+.ql-timeline {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: rgba(0,0,0,0.65);
+    font-size: 14px;
+    font-variant: tabular-nums;
+    line-height: 1.5;
+    -webkit-font-feature-settings: 'tnum';
+    font-feature-settings: 'tnum';
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    .ql-timeline-item {
+        position: relative;
+        margin: 0;
+        padding: 0 0 20px;
+        font-size: 14px;
+        list-style: none;
+        .ql-timeline-tail {
+            position: absolute;
+            top: .75em;
+            left: 4px;
+            height: 100%;
+            border-left: 2px solid #e8e8e8;
+        }
+        .ql-timeline-head {
+            box-sizing: border-box;
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: #fff;
+            border: 2px solid transparent;
+            border-radius: 100px;
+            color: #1890ff;
+            border-color: #1890ff;
+        
+        }
+        .ql-timeline-content {
+            position: relative;
+            top: -6px;
+            margin: 0 0 0 18px;
+        }
+        &:last-child {
+            .ql-timeline-tail {
+                display: none;
+            }
+        }
+    }
+}

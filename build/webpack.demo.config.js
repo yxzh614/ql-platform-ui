@@ -3,14 +3,14 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
 
 module.exports = {
-  entry: './demo/demo.js',
+  entry: './demo/demo.tsx',
   mode: 'development',
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist')
   },
   resolve: {
-      extensions: ['.js', '.css', '.less', '.ts', '.tsx']     // 定义在该数组中的文件后缀不需要显示给出
+      extensions: ['.ts', '.tsx', '.js', '.css', '.less']     // 定义在该数组中的文件后缀不需要显示给出
   },
   plugins: [
     new CleanWebpackPlugin(['dist']),
@@ -21,7 +21,8 @@ module.exports = {
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './packages')
-    }
+    },
+    mainFiles: ['index', 'index.tsx']
   },
   devServer: {
     contentBase: './dist'
