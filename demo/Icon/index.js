@@ -14,6 +14,9 @@ export default class extends React.Component {
         return (
             <div className="demo-block">
                 <h2 id="ql-icon">图标(Icon)</h2>
+                    <div className="demo-info">
+                      设置一系列不同形态的图标
+                    </div>
                 <Icon type="close" />
             </div>
         )

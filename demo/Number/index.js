@@ -11,6 +11,9 @@ export default class extends React.Component {
         return (
             <div className="demo-block">
                 <h2 id="ql-number">数字输入(Number)</h2>
+                    <div className="demo-info">
+                      提供数字输入功能，从键盘输入或者通过按钮点击
+                    </div>
                 <div className="demo-info">
                     数字输入组件
                 </div>

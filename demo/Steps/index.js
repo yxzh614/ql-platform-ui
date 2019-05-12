@@ -13,6 +13,9 @@ export default class extends React.Component {
         return (
             <div className="demo-block">
             <h2 id="ql-steps">步骤(steps)</h2>
+                    <div className="demo-info">
+                      用于一系列步骤进度的展示
+                    </div>
                 <Steps max={4} current={2} />    
             </div>
         )

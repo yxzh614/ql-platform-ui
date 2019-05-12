@@ -1,14 +1,16 @@
+@import '../../Theme/theme.less';
+
 .ql-input {
   height: 28px;
   line-height: 28px;
   border: 1px solid grey;
   cursor: text;
-  color: #222222;
+  color: @font-color;
   border-radius: 4px;
   padding-left: 4px;
   &:focus {
-    border: 1px solid grey;
-    box-shadow: 0 0 0 2px #0000002a;
+    border: 1px solid @border-color;
+    box-shadow: 0 0 0 2px @default-shadow;
     outline: 0;
   }
 

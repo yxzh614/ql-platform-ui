@@ -14,6 +14,9 @@ export default class extends React.Component {
         return (
             <div className="demo-block">
                 <h2 id="ql-progress">进度条(Progress)</h2>
+                    <div className="demo-info">
+                      展示百分比进度值
+                    </div>
                 <Progress progress={this.state.progress} />
             </div>
         )

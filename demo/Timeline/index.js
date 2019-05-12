@@ -12,7 +12,10 @@ export default class extends React.Component {
     render () {
         return (
             <div className="demo-block">
-            <h2 id="ql-steps">时间轴(timeline)</h2>
+            <h2 id="ql-timeline">时间轴(timeline)</h2>
+                    <div className="demo-info">
+                      纵向排列一系列信息
+                    </div>
                 <Timeline datasource={['1', '2']} active={0} />    
             </div>
         )

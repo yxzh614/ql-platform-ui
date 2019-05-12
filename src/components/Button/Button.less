@@ -1,3 +1,4 @@
+@import '../../Theme/theme.less';
 
 .ql-button {
   display: inline-block;
@@ -6,24 +7,55 @@
   padding: 0 20px;
   height: 32px;
   line-height: 28px;
-  border: 1px solid #444444;
+  border: 1px solid @defalult-color;
   border-radius: 4px;
   background: white;
   &:focus {
     outline: 0;
   }
   &:active:focus {
-    box-shadow: 0 0 0 2px #0000002a;
+    background: @default-lite-color;
+    box-shadow: 0 0 0 2px @default-shadow;
   }
 
   &.primary {
-    background: #6fa3f8;
+    background: @primary-color;
     color: white;
-    border: 1px solid #6fa3f8;
+    border: 1px solid @primary-color;
     &:active:focus {
-      box-shadow: 0 0 0 2px #6fa3f82a;
-      background: #82b1fd;
-      border: 1px solid #82b1fd;
+      box-shadow: 0 0 0 2px @primary-shadow;
+      background: @primary-lite-color;
+      border: 1px solid @primary-lite-color;
+    }
+  }
+  &.success {
+    background: @success-color;
+    color: white;
+    border: 1px solid @success-color;
+    &:active:focus {
+      box-shadow: 0 0 0 2px @success-shadow;
+      background: @success-lite-color;
+      border: 1px solid @success-lite-color;
+    }
+  }
+  &.warning {
+    background: @warning-color;
+    color: white;
+    border: 1px solid @warning-color;
+    &:active:focus {
+      box-shadow: 0 0 0 2px @warning-shadow;
+      background: @warning-lite-color;
+      border: 1px solid @warning-lite-color;
+    }
+  }
+  &.error {
+    background: @error-color;
+    color: white;
+    border: 1px solid @error-color;
+    &:active:focus {
+      box-shadow: 0 0 0 2px @error-shadow;
+      background: @error-lite-color;
+      border: 1px solid @error-lite-color;
     }
   }
 
@@ -31,10 +63,25 @@
     height: 28px;
     padding: 0 16px;
     min-width: 62px;
+    &.round {
+      border-radius: 14px;
+      padding: 0 24px;
+    }
   }
 
   &.round {
     border-radius: 16px;
     padding: 0 26px;
   }
+
+  &.l {
+    height: 35px;
+    padding: 0 22px;
+    min-width: 74px;
+    &.round {
+      border-radius: 18px;
+      padding: 0 30px;
+    }
+  }
+
 }
