@@ -1,6 +1,7 @@
 import React from 'react'
 import './Breadcrumb.less'
 import classnames from 'classnames'
+import { Icon } from '../../../src'
 export interface BreadcrumbItem {
     label: string
     key: string
@@ -20,7 +21,7 @@ export default class extends React.Component<BreadcrumbProps> {
 
     renderBreadcrumbItems () {
 
-        const { datasource, seperator = '/' } = this.props
+        const { datasource, seperator } = this.props
 
         if (datasource && datasource.length > 0) {
             return datasource.map((item, key) => {
@@ -29,7 +30,7 @@ export default class extends React.Component<BreadcrumbProps> {
                     <span className={classnames(
                         'breadcrumb-seperator',
                         key === 0 ? 'breadcrumb-seperator-hide' : ''
-                        )}>{seperator}</span>
+                        )}>{seperator ? seperator : (<Icon type={'right'}/>)}</span>
                     <span className="breadcrumb-label" onClick={(e) => {this.handleClick(e, item.key)}}>{item.label}</span>
                 </div>
                 )

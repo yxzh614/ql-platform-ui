@@ -1,18 +1,29 @@
+@import '../../Theme/theme.less';
+
 .ql-breadcrumb {
+    color: @font-color;
     .breadcrumb-item {
         display: inline-block;
+        vertical-align: middle;
+        height: 20px;
+        line-height: 20px;
         .breadcrumb-label {
             user-select: none;
             &:hover {
-                color: rgb(96, 212, 212);
+                color: @primary-color;
                 &:active {
-                    color: rgb(144, 228, 228);
+                    color: @primary-lite-color;
                 }
             }
         }
         .breadcrumb-seperator {
+            display: inline-block;
+            height: 20px;
+            line-height: 20px;
+            vertical-align: bottom;
             user-select: none;
             margin: 0 4px;
+            font-size: 12px;
         }
         .breadcrumb-seperator-hide {
             display: none;

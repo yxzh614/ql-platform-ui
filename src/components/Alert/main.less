@@ -6,14 +6,30 @@
     line-height: 28px;
     font-size: 12px;
     padding: 0 10px;
-    border: 1px solid @error-lite-color;
+    border: 1px solid @error-color;
     border-radius: 4px;
-    background: @error-liter-color;
-    color: @error-color;
+    background: @error-color;
+    color: white;
     &.hide {
         display: none;
     }
     .ql-alert-close {
         float: right;
+    }
+    &.primary {
+        border: 1px solid @primary-color;
+        background: @primary-color;
+    }
+    &.warning {
+        border: 1px solid @warning-color;
+        background: @warning-color;
+    }
+    &.error {
+        border: 1px solid @error-color;
+        background: @error-color;
+    }
+    &.success {
+        border: 1px solid @success-color;
+        background: @success-color;
     }
 }

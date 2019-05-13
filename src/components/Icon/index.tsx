@@ -3,7 +3,7 @@ import 'zenticons/lib/index.css'
 import classnames from 'classnames'
 export type IconProps = {
   type: string,
-  className: string
+  className?: string
 }
 // using zent icons
 /* auto-generate: start */

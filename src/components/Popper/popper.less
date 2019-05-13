@@ -1,3 +1,4 @@
+@import '../../Theme/theme.less';
 .ql-popper {
     position: relative;
     display: inline-block;
@@ -6,13 +7,13 @@
         .ql-popper-popper {
             border-radius: 4px;
             background: white;
-            border: 1px solid #858585;
-            box-shadow: 0 0 2px 0 #0000002a;
+            border: 1px solid @border-color;
+            box-shadow: 0 0 2px 0 @default-shadow;
             .ql-popper-container {
                 padding: 10px;
             }
             .ql-popper-arrow {
-                border-color: #858585;
+                border-color: @border-color;
                 margin-left: 0;
                 margin-right: 0;
                 width: 0;
@@ -80,7 +81,7 @@
                 border-right-color: transparent;
                 border-top-color: transparent;
                 left: calc(50% - 5px);
-                top: 1px;
+                top: 0px;
             }
         }
     }

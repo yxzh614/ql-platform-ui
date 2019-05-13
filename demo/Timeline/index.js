@@ -16,7 +16,10 @@ export default class extends React.Component {
                     <div className="demo-info">
                       纵向排列一系列信息
                     </div>
-                <Timeline datasource={['1', '2']} active={0} />    
+                <Timeline datasource={[
+                    '2018-05-01:国际劳动节',
+                    '2018-10-01:国庆节'
+                ]} active={0} />    
             </div>
         )
     }

@@ -1,3 +1,4 @@
+@import '../../Theme/theme.less';
 .ql-checkbox {
     display: inline-block;
     line-height: 12px;
@@ -18,13 +19,13 @@
 
         &.checked {
             color: white;
-            background: #598fe6;
+            background: @primary-color;
         }
     }
     .ql-checkbox-label {
         padding-left: 4px;
         line-height: 12px;
         user-select: none;
-        color: black;
+        color: @font-color;
     }
 }

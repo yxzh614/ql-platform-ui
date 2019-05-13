@@ -1,3 +1,4 @@
+@import '../../Theme/theme.less';
 .ql-steps {
     display: flex;
     justify-content: space-between;
@@ -9,11 +10,12 @@
         flex: 1;
         height: 100%;
         .ql-steps-label {
+            color: @font-color;
             display: inline-block;
             width: 20px;
             height: 20px;
             line-height: 20px;
-            border: 1px solid black;
+            border: 1px solid @border-color;
             border-radius: 10px;
             vertical-align: middle;
             text-align: center;
@@ -23,7 +25,7 @@
             content: '';
             width: calc(100% - 50px);
             height: 1px;
-            background: black;
+            background: @border-color;
             vertical-align: middle;
             margin: 0 10px;
         }
@@ -37,20 +39,20 @@
             }
         }
         &.current {
-            color: white;
             .ql-steps-label {
-                border-color: #598fe6;
-                background: #598fe6;
+                color: white;
+                border-color: @primary-lite-color;
+                background: @primary-lite-color;
             }
         }
         &.finish {
-            color: white;
             .ql-steps-label {
-                border-color: #598fe6;
-                background: #598fe6;
+                color: white;
+                border-color: @primary-lite-color;
+                background: @primary-lite-color;
             }
             &:after {
-                background: #598fe6;
+                background: @primary-lite-color;
             }
         }
     }
