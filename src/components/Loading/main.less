@@ -1,0 +1,27 @@
+@import '../../Theme/theme.less';
+
+.ql-loading-warpper {
+    position: relative;
+    .ql-loading {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #c9c9c97a;
+        text-align: center;
+        .ql-loading-icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -10px;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+            -webkit-animation: antRotate 1s infinite linear;
+            animation: antRotate 1s infinite linear;
+            
+        }
+    }
+}
+@keyframes antRotate{to{-webkit-transform:rotate(405deg);transform:rotate(405deg);}}

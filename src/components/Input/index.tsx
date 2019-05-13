@@ -1,5 +1,5 @@
 import * as React from 'react'
-import './Input.less'
+import './input.less'
 import classnames from 'classnames'
 import Icon from '../Icon/index.tsx'
 

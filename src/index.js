@@ -18,6 +18,7 @@ import Badge from './components/Badge';
 import Message from './components/Message';
 import Alert from './components/Alert';
 import Range from './components/Range';
+import Loading from './components/Loading';
 export {
   Breadcrumb,
   Button,
@@ -38,5 +39,6 @@ export {
   Badge,
   Message,
   Alert,
-  Range
+  Range,
+  Loading
 };
