@@ -1,0 +1,35 @@
+.ql-switch {
+    display: inline-block;
+    line-height: 12px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 2px;
+    .ql-switch-warpper {
+        display: inline-block;
+        box-sizing: border-box;
+        font-size: 8px;
+        padding: 1px;
+        width: 50px;
+        height: 26px;
+        line-height: 26px;
+        border-radius: 13px;
+        background: #bbbbbb;
+        color: #bbbbbb;
+        transition: all 0.15s;
+        .ql-switch-inner {
+            margin: 3px;
+            border-radius: 18px;
+            width: 18px;
+            height: 18px;
+            line-height: 20px;
+            background: white;
+        }
+        &.checked {
+            color: white;
+            background: #598fe6;
+            .ql-switch-inner {
+                float: right;
+            }
+        }
+    }
+}

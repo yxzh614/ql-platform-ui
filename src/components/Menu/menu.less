@@ -1,13 +1,14 @@
+@import '../../Theme/theme.less';
 .ql-menu {
   .menu-label {
     height: 30px;
     line-height: 30px;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid @border-color;
     user-select:none;
     &:hover {
-      color: green;
+      color: @primary-color;
       &:active {
-        background: grey;
+        background: @default-lite-color;
       }
     }
   }

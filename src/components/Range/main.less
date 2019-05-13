@@ -1,0 +1,27 @@
+@import '../../Theme/theme.less';
+
+.ql-range {
+    input[type="range"] {
+        -webkit-appearance: none;
+        width: 300px;
+        border-radius: 10px;
+        &:focus {
+            outline: none;
+        }
+        &::-webkit-slider-runnable-track {
+            height: 12px;
+            border-radius: 10px; /*将轨道设为圆角的*/
+            background: @default-lite-color;
+        }
+        &::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            height: 25px;
+            width: 25px;
+            margin-top: -7px; /*使滑块超出轨道部分的偏移量相等*/
+            background: white;
+            border-radius: 50%; /*外观设置为圆形*/
+            border: solid 0.125em @border-color; /*设置边框*/
+            box-shadow: 0 .125em .125em #3b4547; /*添加底部阴影*/
+        }
+    }
+}
