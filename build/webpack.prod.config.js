@@ -7,7 +7,7 @@ module.exports = {
   mode: 'production',
 
   entry: {
-    index: './src/index.js',
+    index: './src/index.tsx',
   },
 
   output: {

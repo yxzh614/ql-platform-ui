@@ -3,9 +3,10 @@ import classnames from 'classnames'
 import './main.less'
 
 export interface AlertProps {
-    title: string,
-    closable: boolean,
+    title: string
+    closable: boolean
     close: string
+    type?: string
 }
 
 export default class extends React.Component<AlertProps> {
@@ -15,11 +16,12 @@ export default class extends React.Component<AlertProps> {
     }
 
     render () {
-        const  {title, closable, close} = this.props
+        const  {title, type, close} = this.props
         return (
             <div className={
                 classnames('ql-alert',
-                    this.state.visable ? '' : 'hide'
+                    this.state.visable ? '' : 'hide',
+                    type
                 )
             }>
                 <span>{title}</span>

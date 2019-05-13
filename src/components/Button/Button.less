@@ -2,62 +2,82 @@
 
 .ql-button {
   display: inline-block;
+  box-sizing: border-box;
   text-align: center;
   min-width: 70px;
   padding: 0 20px;
   height: 32px;
   line-height: 28px;
-  border: 1px solid @defalult-color;
+  border: 1px solid @default-color;
+  color: @default-color;
   border-radius: 4px;
   background: white;
   &:focus {
     outline: 0;
   }
   &:active:focus {
-    background: @default-lite-color;
-    box-shadow: 0 0 0 2px @default-shadow;
+    color: @default-dark-color;
+    border-color: @default-dark-color;
+    box-shadow: 0 0 0 2px @default-lite-color;
   }
 
   &.primary {
     background: @primary-color;
+    border: 1px solid transparent;
     color: white;
-    border: 1px solid @primary-color;
     &:active:focus {
+      border: 1px solid transparent;
+      color: white;
       box-shadow: 0 0 0 2px @primary-shadow;
-      background: @primary-lite-color;
-      border: 1px solid @primary-lite-color;
+      background: @primary-dark-color;
     }
-  }
-  &.success {
-    background: @success-color;
-    color: white;
-    border: 1px solid @success-color;
-    &:active:focus {
-      box-shadow: 0 0 0 2px @success-shadow;
-      background: @success-lite-color;
-      border: 1px solid @success-lite-color;
+    &:hover {
+      background: @primary-lite-color;
     }
   }
   &.warning {
     background: @warning-color;
+    border: 1px solid transparent;
     color: white;
-    border: 1px solid @warning-color;
     &:active:focus {
+      border: 1px solid transparent;
+      color: white;
       box-shadow: 0 0 0 2px @warning-shadow;
+      background: @warning-dark-color;
+    }
+    &:hover {
       background: @warning-lite-color;
-      border: 1px solid @warning-lite-color;
     }
   }
   &.error {
     background: @error-color;
+    border: 1px solid transparent;
     color: white;
-    border: 1px solid @error-color;
     &:active:focus {
+      border: 1px solid transparent;
+      color: white;
       box-shadow: 0 0 0 2px @error-shadow;
+      background: @error-dark-color;
+    }
+    &:hover {
       background: @error-lite-color;
-      border: 1px solid @error-lite-color;
     }
   }
+  &.success {
+    background: @success-color;
+    border: 1px solid transparent;
+    color: white;
+    &:active:focus {
+      border: 1px solid transparent;
+      color: white;
+      box-shadow: 0 0 0 2px @success-shadow;
+      background: @success-dark-color;
+    }
+    &:hover {
+      background: @success-lite-color;
+    }
+  }
+  
 
   &.s {
     height: 28px;

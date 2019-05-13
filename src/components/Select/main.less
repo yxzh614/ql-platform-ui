@@ -1,3 +1,4 @@
+@import '../../Theme/theme.less';
 .ql-select {
     &:focus {
         outline: 0;
@@ -7,14 +8,14 @@
         min-width: 100px;
         height: 30px;
         line-height: 30px;
-        border: 1px solid #858585;
-        box-shadow: 0 0 2px 0 #0000002a;
+        border: 1px solid @border-color;
+        box-shadow: 0 0 2px 0 @default-shadow;
         border-radius: 4px;
     }
     .ql-select-option {
         height: 30px;
         line-height: 30px;
-        border-bottom: 1px solid #858585;
+        border-bottom: 1px solid @border-color;
         &:last-child {
             border-bottom: 0;
         }
@@ -29,12 +30,12 @@
         .ql-popper-popper {
             border-radius: 4px;
             background: white;
-            border: 1px solid #858585;
-            box-shadow: 0 0 2px 0 #0000002a;
+            border: 1px solid @border-color;
+            box-shadow: 0 0 2px 0 @default-shadow;
             .ql-popper-container {
             }
             .ql-popper-arrow {
-                border-color: #858585;
+                border-color: @border-color;
                 margin-left: 0;
                 margin-right: 0;
                 width: 0;

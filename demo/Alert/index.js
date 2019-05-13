@@ -13,8 +13,18 @@ export default class extends React.Component {
                     <div className="demo-info">
                         在页面内展示一条警告文案
                     </div>
-                <Alert title={'错误提示的文案'} closable close={'知道了'}>
-                </Alert>
+                    <div style={{marginBottom: '10px'}}>
+                        <Alert type={'primary'} title={'错误提示的文案'} closable close={'知道了'} />
+                    </div>
+                    <div style={{marginBottom: '10px'}}>
+                        <Alert type={'error'} title={'错误提示的文案'} closable close={'知道了'} />
+                    </div>
+                    <div style={{marginBottom: '10px'}}>
+                        <Alert type={'warning'} title={'错误提示的文案'} closable close={'知道了'} />
+                    </div>
+                    <div style={{marginBottom: '10px'}}>
+                        <Alert type={'success'} title={'错误提示的文案'} closable close={'知道了'} />
+                    </div>
             </div>
         )
     }

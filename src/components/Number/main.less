@@ -1,16 +1,18 @@
+@import '../../Theme/theme.less';
+
 .ql-number-warpper {
     display: inline-block;
-    box-shadow: 0 0 2px 0 #0000002a;
+    box-shadow: 0 0 2px 0 @default-shadow;
     .ql-number {
         height: 28px;
         line-height: 28px;
-        border: 1px solid grey;
+        border: 1px solid @border-color;
         cursor: text;
-        color: #222222;
+        color: @font-color;
         padding: 0;
         padding-left: 4px;
         &:focus {
-            box-shadow: 0 0 0 2px #0000002a;
+            box-shadow: 0 0 0 2px @default-shadow;
             outline: 0;
         }
     }
@@ -22,12 +24,12 @@
         width: 40px;
         font-size: 20px;
         line-height: 28px;
-        border: 1px solid grey;
-        background: white;
+        border: 1px solid @primary-color;
+        color: white;
         z-index: 2;
-        background: #0000002a;
+        background: @primary-color;
         &:focus {
-            box-shadow: 0 0 0 2px #0000002a;
+            box-shadow: 0 0 0 2px @default-shadow;
             outline: 0;
         }
         &.prefix {
