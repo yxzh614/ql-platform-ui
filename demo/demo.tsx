@@ -8,7 +8,7 @@ import IconDemo from './Icon'
 import PopperDemo from './Popper'
 import BreadcrumbDemo from './Breadcrumb'
 import CardDemo from './Card'
-import CheckboxDemo from './CheckBox'
+import CheckboxDemo from './Checkbox'
 import RadioDemo from './Radio'
 import SelectDemo from './Select'
 import StepsDemo from './Steps'
@@ -20,6 +20,7 @@ import BadgeDemo from './Badge'
 import MessageDemo from './Message'
 import AlertDemo from './Alert'
 import RangeDemo from './Range'
+import LoadingDemo from './Loading'
 
 import Menu from '../src/components/Menu'
 import './demo.less'
@@ -36,7 +37,7 @@ const components = [
   'input', 'modal', 'number', 'popper', 'progress',
   'radio',
   'select', 'steps', 'timeline', 'switch', 'badge', 'message', 'alert',
-  'range'
+  'range', 'loading'
 ]
 
 const MenuDatasource = [
@@ -77,6 +78,7 @@ const inner = (
       <MessageDemo />
       <AlertDemo />
       <RangeDemo />
+      <LoadingDemo />
     </div>
   </div>
 )

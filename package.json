@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest",
     "example": "webpack --config build/webpack.demo.config.js",
-    "dev": "webpack-dev-server --open --config build/webpack.demo.config.js",
+    "dev": "webpack-dev-server --config build/webpack.demo.config.js",
     "build": "webpack --config build/webpack.prod.config.js",
     "pub": "npm run build & npm publish"
   },
