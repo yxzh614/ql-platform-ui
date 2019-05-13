@@ -67,7 +67,6 @@ export default class extends React.Component<MenuProps> {
 
   render() {
     const { datasource, type } = this.state
-    console.log(datasource)
     return (
       <div className={
         classnames('ql-menu',

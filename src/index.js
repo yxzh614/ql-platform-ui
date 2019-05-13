@@ -13,6 +13,11 @@ import Radio from './components/Radio';
 import Select from './components/Select';
 import Steps from './components/Steps';
 import Timeline from './components/Timeline';
+import Switch from './components/Switch';
+import Badge from './components/Badge';
+import Message from './components/Message';
+import Alert from './components/Alert';
+import Range from './components/Range';
 export {
   Breadcrumb,
   Button,
@@ -28,5 +33,10 @@ export {
   Radio,
   Select,
   Steps,
-  Timeline
+  Timeline,
+  Switch,
+  Badge,
+  Message,
+  Alert,
+  Range
 };

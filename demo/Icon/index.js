@@ -18,6 +18,12 @@ export default class extends React.Component {
                       设置一系列不同形态的图标
                     </div>
                 <Icon type="close" />
+                <Icon type="shop" />
+                <Icon type="right" />
+                <Icon type="plus" />
+                <Icon type="star" />
+                <Icon type="warning" />
+                <Icon type="lock" />
             </div>
         )
     }
