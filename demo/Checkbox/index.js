@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import {Checkbox, CheckboxGroup} from '../../src/components/Checkbox/index.tsx'
+import Checkbox from '../../src/components/Checkbox/index.tsx'
 
 export default class extends React.Component {
     state = {
