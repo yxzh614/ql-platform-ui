@@ -51,7 +51,7 @@ export default class extends React.Component<ListProps, ListState> {
         this.setState({overIndex: key})
     }
 
-    handleDragEnd = (e: React.DragEvent<HTMLDivElement>) => { // 停止拖拽
+    handleDragEnd = (e: React.DragEvent<HTMLDivElement>) => {
         const { datasource, onDrag } = this.props
 
         const {overIndex, originIndex} = this.state
@@ -61,7 +61,7 @@ export default class extends React.Component<ListProps, ListState> {
         }
 
         const position = overIndex ? 'down' : 'up'
-        onDrag && onDrag(e, arraySorter(datasource, originIndex || overIndex, overIndex, position)) // 如果没有target就传key 表示未移动
+        onDrag && onDrag(e, arraySorter(datasource, originIndex || overIndex, overIndex, position)) // if there is no originIndex, send key in which means making no movement
         this.setState({overIndex: -1})
     }
 
@@ -81,7 +81,7 @@ export default class extends React.Component<ListProps, ListState> {
         const { originIndex } = this.state  
 
         const position = getPosition(e)
-        onDrag && onDrag(e, arraySorter(datasource, originIndex || key, key, position)) // 如果没有target就传key 表示未移动
+        onDrag && onDrag(e, arraySorter(datasource, originIndex || key, key, position)) // if there is no originIndex, send key in which means making no movement
         this.setState({overIndex: -1})
     }
 
@@ -115,7 +115,7 @@ export default class extends React.Component<ListProps, ListState> {
     }
 }
 
-function arraySorter (datasource: Array<any>, origin: number, target: number, position: string) { // 拖拽排序
+function arraySorter (datasource: Array<any>, origin: number, target: number, position: string) { // sort by drag
     const res: any[] = []
     if (position === 'up') {
         if (origin < target) {
@@ -136,7 +136,7 @@ function arraySorter (datasource: Array<any>, origin: number, target: number, po
 }
 
 function getPosition (e: React.MouseEvent) { // get pointer position
-    const position = e.nativeEvent.offsetY
+    const position = e.nativeEvent.layerY // layerY contains border
     const height = e.nativeEvent.target ? e.nativeEvent.target.offsetHeight : 0;
     if (position > height || position < 0) {
         return 'out'
