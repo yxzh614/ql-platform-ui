@@ -21,6 +21,7 @@ import MessageDemo from './Message'
 import AlertDemo from './Alert'
 import RangeDemo from './Range'
 import LoadingDemo from './Loading'
+import ListDemo from './List'
 
 import Menu from '../src/components/Menu'
 import './demo.less'
@@ -37,7 +38,7 @@ const components = [
   'input', 'modal', 'number', 'popper', 'progress',
   'radio',
   'select', 'steps', 'timeline', 'switch', 'badge', 'message', 'alert',
-  'range', 'loading'
+  'range', 'loading', 'list'
 ]
 
 const MenuDatasource = [
@@ -79,6 +80,7 @@ const inner = (
       <AlertDemo />
       <RangeDemo />
       <LoadingDemo />
+      <ListDemo />
     </div>
   </div>
 )

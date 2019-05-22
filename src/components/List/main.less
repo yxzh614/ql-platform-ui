@@ -1,0 +1,16 @@
+@import '../../Theme/theme.less';
+
+.ql-list-item {
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px solid @border-color;
+    &.up {
+        border-top: 3px solid black;
+    }
+    &.down {
+        border-bottom: 3px solid black;
+    }
+    &.active {
+        background: @default-lite-color;
+    }
+}
