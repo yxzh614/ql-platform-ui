@@ -1,5 +1,6 @@
 @import '../../Theme/theme.less';
 .ql-menu {
+  color: @font-color;
   .menu-label {
     height: 30px;
     line-height: 30px;
@@ -10,6 +11,10 @@
       &:active {
         background: @default-lite-color;
       }
+    }
+    &.selected {
+      color: @primary-color;
+      background: @default-lite-color;
     }
   }
   .sub-menu {

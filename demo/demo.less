@@ -1,11 +1,11 @@
-
+@import '../src/Theme/theme.less';
 .demo-side {
   position: fixed;
   width: 200px;
   min-height: 100vh;
   overflow-y: scroll;
   float: left;
-  border-right: 2px solid green;
+  border-right: 2px solid @primary-color;
 }
 .demo-main {
   margin-left: 220px;
@@ -48,4 +48,8 @@
     content: '·';
     margin-right: 4px;
   }
+}
+
+body {
+  margin: 0;
 }
