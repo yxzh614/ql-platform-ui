@@ -7,7 +7,7 @@ module.exports = {
   mode: 'development',
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, '../dist')
   },
   resolve: {
       extensions: ['.ts', '.tsx', '.js', '.css', '.less']     // 定义在该数组中的文件后缀不需要显示给出

@@ -2,7 +2,7 @@
   "name": "ql-platform-ui",
   "version": "0.2.6",
   "description": "react component",
-  "main": "build/lib/index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "jest",
     "example": "webpack --config build/webpack.demo.config.js",
@@ -63,7 +63,7 @@
   },
   "jest": {
     "moduleNameMapper": {
-      "\\.less$": "<rootDir>/__mocks__/styleMock.js"
+      "\\.(css|less)$": "<rootDir>/__mocks__/styleMock.js"
     }
   }
 }

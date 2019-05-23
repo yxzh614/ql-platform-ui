@@ -12,7 +12,7 @@ module.exports = {
 
   output: {
     filename: '[name].js',
-    path: path.resolve(__dirname, 'lib'),
+    path: path.resolve(__dirname, '../lib'),
     library: 'ql-platform-ui',
     libraryTarget: 'umd'
   },

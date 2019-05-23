@@ -81,7 +81,7 @@ export default class extends React.Component<ListProps, ListState> {
         const { originIndex } = this.state  
 
         const position = getPosition(e)
-        onDrag && onDrag(e, arraySorter(datasource, originIndex || key, key, position)) // if there is no originIndex, send key in which means making no movement
+        onDrag && onDrag(e, arraySorter(datasource, originIndex, key, position)) // if there is no originIndex, send key in which means making no movement
         this.setState({overIndex: -1})
     }
 
