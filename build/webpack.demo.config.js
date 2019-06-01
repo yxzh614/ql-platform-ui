@@ -10,7 +10,8 @@ module.exports = {
     path: path.resolve(__dirname, '../dist')
   },
   resolve: {
-      extensions: ['.ts', '.tsx', '.js', '.css', '.less']     // 定义在该数组中的文件后缀不需要显示给出
+      extensions: ['.ts', '.tsx', '.js', '.css', '.less'],     // 定义在该数组中的文件后缀不需要显示给出
+      mainFiles: ['index', 'index.tsx']
   },
   plugins: [
     new CleanWebpackPlugin(['dist']),
@@ -18,12 +19,6 @@ module.exports = {
       title: 'demo'
     })
   ],
-  resolve: {
-    alias: {
-      '@': path.resolve(__dirname, './packages')
-    },
-    mainFiles: ['index', 'index.tsx']
-  },
   devServer: {
     contentBase: './dist'
   },

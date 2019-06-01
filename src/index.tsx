@@ -1,4 +1,4 @@
-import Breadcrumb from './components/Breadcrumb';
+import Breadcrumb from './components/breadcrumb';
 import Button from './components/Button';
 import Card from './components/Card';
 import Checkbox from './components/Checkbox';
