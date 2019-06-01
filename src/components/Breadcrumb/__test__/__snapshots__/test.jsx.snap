@@ -10,7 +10,9 @@ exports[`Breadcrumb 1`] = `
     <span
       className="breadcrumb-seperator breadcrumb-seperator-hide"
     >
-      /
+      <i
+        className="zenticon zenticon-right"
+      />
     </span>
     <span
       className="breadcrumb-label"
@@ -25,7 +27,9 @@ exports[`Breadcrumb 1`] = `
     <span
       className="breadcrumb-seperator"
     >
-      /
+      <i
+        className="zenticon zenticon-right"
+      />
     </span>
     <span
       className="breadcrumb-label"
@@ -40,7 +44,9 @@ exports[`Breadcrumb 1`] = `
     <span
       className="breadcrumb-seperator"
     >
-      /
+      <i
+        className="zenticon zenticon-right"
+      />
     </span>
     <span
       className="breadcrumb-label"
