@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom'
-import Timeline from '../../src/components/Timeline/index.tsx'
+import { Timeline } from '../../src'
 
 
 export default class extends React.Component {

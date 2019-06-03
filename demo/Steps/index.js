@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom'
-import Steps from '../../src/components/Steps/index.tsx'
+import { Steps } from '../../src'
 
 
 export default class extends React.Component {

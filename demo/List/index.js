@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom'
-import List from '../../src/components/List/index.tsx'
+import { List } from '../../src'
 
 export default class extends React.Component {
     state = {

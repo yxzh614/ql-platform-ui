@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom'
-import Number from '../../src/components/Number/index.tsx'
+import { Number } from '../../src'
 
 export default class extends React.Component {
     state = {

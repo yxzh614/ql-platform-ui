@@ -1,6 +1,6 @@
 import React from 'react'
 import classnames from 'classnames'
-import Button from '../Button'
+import Button from '../button'
 import './main.less'
 export interface ModalProps {
     visable: boolean,

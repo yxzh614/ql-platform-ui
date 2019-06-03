@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom'
-import Select from '../../src/components/Select/index.tsx'
-import Button from '../../src/components/Button/index.tsx'
+import { Button, Select } from '../../src'
 
 const options = [{
     label: 'op1',

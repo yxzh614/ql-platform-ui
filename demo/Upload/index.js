@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom'
-import Upload from '../../src/components/Upload/index.tsx'
+import { Upload } from '../../src'
 
 
 export default class extends React.Component {

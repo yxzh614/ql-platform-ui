@@ -1,5 +1,5 @@
 import Breadcrumb from './components/breadcrumb';
-import Button from './components/Button';
+import Button from './components/button';
 import Card from './components/Card';
 import Checkbox from './components/Checkbox';
 import Icon from './components/Icon';
@@ -14,11 +14,14 @@ import Select from './components/Select';
 import Steps from './components/Steps';
 import Timeline from './components/Timeline';
 import Switch from './components/Switch';
-import Badge from './components/Badge';
+import Badge from './components/badge';
 import Message from './components/Message';
 import Alert from './components/Alert';
 import Range from './components/Range';
 import Loading from './components/Loading';
+import List from './components/List'
+import Upload from './components/Upload'
+
 export {
   Breadcrumb,
   Button,
@@ -40,5 +43,7 @@ export {
   Message,
   Alert,
   Range,
-  Loading
+  Loading,
+  List,
+  Upload
 };

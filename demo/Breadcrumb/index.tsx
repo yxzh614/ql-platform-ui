@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom'
-import Breadcrumb from '../../src/components/breadcrumb'
+import { Breadcrumb } from '../../src'
 
 export default class extends React.Component {
 

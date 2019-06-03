@@ -1,6 +1,6 @@
 import * as React from 'react'
 import classnames from 'classnames'
-import Button from '../Button/index.tsx'
+import Button from '../button/index.tsx'
 import './main.less'
 
 export interface InputProps {

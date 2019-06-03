@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button } from '../../../src'
+import Button from '../button'
 import classnames from 'classnames'
 import './main.less'
 

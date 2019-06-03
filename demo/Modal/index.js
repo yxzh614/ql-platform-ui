@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom'
-import Modal from '../../src/components/Modal/index.tsx'
-import Button from '../../src/components/Button/index.tsx'
+import { Button, Modal } from '../../src'
 
 
 export default class extends React.Component {

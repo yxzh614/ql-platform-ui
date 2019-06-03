@@ -1,7 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Badge from '../../src/components/Badge/index.tsx'
-import Range from '../../src/components/Range/index.tsx'
+import { Range } from '../../src'
 
 export default class extends React.Component {
     state = {

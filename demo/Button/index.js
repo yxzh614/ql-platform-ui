@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom'
-import Button from '../../src/components/Button/index.tsx'
+import { Button } from '../../src'
+console.log(Button)
 
 export default class extends React.Component {
     handleClick = (e) => {
