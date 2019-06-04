@@ -1,9 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import ButtonDemo from './Button'
 
 import InputDemo from './Input'
 import ProgressDemo from './Progress'
-import ButtonDemo from './Button'
 import IconDemo from './Icon'
 import PopperDemo from './Popper'
 import BreadcrumbDemo from './Breadcrumb'

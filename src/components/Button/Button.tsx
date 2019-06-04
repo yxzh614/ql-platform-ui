@@ -3,50 +3,50 @@ import './Button.less'
 import classnames from 'classnames'
 
 export type ButtonProps = {
-  text?: String,
-  disabled?: Boolean,
-  type: String,
-  size: String,
-  className: String,
-  onClick?: React.MouseEventHandler<HTMLButtonElement>
+    text?: String, // 按钮文字
+    disabled?: Boolean, // 是否禁用
+    type?: String, // 按钮类型
+    size?: String, // 按钮尺寸
+    className?: String, // 额外类
+    onClick?: React.MouseEventHandler<HTMLButtonElement> // 点击事件
 }
 
 export default class extends React.Component<ButtonProps> {
-  constructor(props: ButtonProps) {
-    super(props)
-  }
-
-  handleClick: React.MouseEventHandler<HTMLButtonElement> = (e) => {
-    
-    const { onClick } = this.props;
-    if (onClick) {
-      (onClick as React.MouseEventHandler<HTMLButtonElement>)(e)
+    constructor(props: ButtonProps) {
+        super(props)
     }
-  }
-  
-  render() {
-    const {
-      text,
-      className,
-      disabled,
-      type,
-      size,
-      ...others
-    } = this.props as ButtonProps
-    return (
-      <button
-        className={classnames(
-          className,
-          'ql-button',
-          disabled ? 'disabled' : '',
-          type,
-          size
-        )}
-        onClick={this.handleClick}
-        {...others}
-      >
-        {text || '按钮'}
-      </button>
-    )
-  }
+
+    handleClick: React.MouseEventHandler<HTMLButtonElement> = (e) => {
+
+        const { onClick } = this.props;
+
+        onClick && onClick(e)
+    }
+
+    render() {
+        const {
+            text,
+            className,
+            disabled,
+            type,
+            size,
+            ...others
+        } = this.props
+
+        return (
+            <button
+                className={classnames(
+                    className,
+                    'ql-button',
+                    disabled ? 'disabled' : '',
+                    type,
+                    size
+                )}
+                onClick={this.handleClick}
+                {...others}
+            >
+                {text || '按钮'}
+            </button>
+        )
+    }
 }
