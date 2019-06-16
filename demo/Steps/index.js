@@ -16,7 +16,7 @@ export default class extends React.Component {
                     <div className="demo-info">
                       用于一系列步骤进度的展示
                     </div>
-                <Steps max={4} current={2} />    
+                <Steps max={4} current={2} />
             </div>
         )
     }

@@ -1,5 +1,5 @@
 import React from 'react';
-// import 'zenticons/lib/index.css'
+import 'zenticons/lib/index.css'
 import classnames from 'classnames'
 export type IconProps = {
   type: string,

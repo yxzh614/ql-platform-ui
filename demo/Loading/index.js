@@ -15,9 +15,6 @@ export default class extends React.Component {
                     </div>
                 <Loading visable={this.state.visable}>
                     <div>asdasdsufdghuadsghfikasjfghdaikufgshd</div>
-                    <div>asdasdsufdghuadsghfikasjfghdaikufgshd</div>
-                    <div>asdasdsufdghuadsghfikasjfghdaikufgshd</div>
-                    <div>asdasdsufdghuadsghfikasjfghdaikufgshd</div>
                 </Loading>
             </div>
         )

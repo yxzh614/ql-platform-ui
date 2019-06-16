@@ -8,7 +8,7 @@ export type ButtonProps = {
     type?: String, // 按钮类型
     size?: String, // 按钮尺寸
     className?: String, // 额外类
-    onClick?: React.MouseEventHandler<HTMLButtonElement> // 点击事件
+    onClick?: React.MouseEventHandler // 点击事件
 }
 
 export default class extends React.Component<ButtonProps> {
@@ -16,7 +16,7 @@ export default class extends React.Component<ButtonProps> {
         super(props)
     }
 
-    handleClick: React.MouseEventHandler<HTMLButtonElement> = (e) => {
+    handleClick: React.MouseEventHandler = (e) => {
 
         const { onClick } = this.props;
 

@@ -2,6 +2,7 @@ import React from 'react'
 import './Breadcrumb.less'
 import classnames from 'classnames'
 import { Icon } from '../..'
+import { number } from 'prop-types';
 export interface BreadcrumbItem {
     label: string
     key: string
