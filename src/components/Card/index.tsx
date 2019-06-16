@@ -3,6 +3,7 @@ import './Card.less'
 
 export interface cardProps {
     children: React.ReactElement
+    title: String
 }
 
 export default class extends React.Component<any> {
@@ -12,10 +13,10 @@ export default class extends React.Component<any> {
     }
 
     render () {
-        const { children } = this.props
+        const { children, title } = this.props
         return (
             <div className={'ql-card-warpper'}>
-                <div className='ql-card-title'>Title</div>
+                <div className='ql-card-title'>{title}</div>
                 <div className='ql-card-container'>{children}</div>
             </div>
         )

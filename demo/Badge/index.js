@@ -1,7 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Badge from '../../src/components/Badge/index.tsx'
-import Button from '../../src/components/Button/index.tsx'
+import {Button, Badge} from '../../src'
 
 export default class extends React.Component {
     state = {

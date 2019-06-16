@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Switch from '../../src/components/Switch/index.tsx'
+import { Switch } from '../../src'
 
 export default class extends React.Component {
     state = {

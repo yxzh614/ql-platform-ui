@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom'
-import Popper from '../../src/components/Popper/index.tsx'
-import Button from '../../src/components/Button/index.tsx'
+import { Button, Popper } from '../../src'
 
 function getPopper () {
     return (

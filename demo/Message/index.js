@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom'
-import Button from '../../src/components/Button/index.tsx'
+import Button from '../../src/components/button/index.tsx'
 import Message, { message } from '../../src/components/Message/index.tsx'
 
 export default class extends React.Component {

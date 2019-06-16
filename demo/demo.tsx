@@ -1,9 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import ButtonDemo from './Button'
 
 import InputDemo from './Input'
 import ProgressDemo from './Progress'
-import ButtonDemo from './Button'
 import IconDemo from './Icon'
 import PopperDemo from './Popper'
 import BreadcrumbDemo from './Breadcrumb'
@@ -21,6 +21,8 @@ import MessageDemo from './Message'
 import AlertDemo from './Alert'
 import RangeDemo from './Range'
 import LoadingDemo from './Loading'
+import ListDemo from './List'
+import UploadDemo from './Upload'
 
 import Menu from '../src/components/Menu'
 import './demo.less'
@@ -37,7 +39,7 @@ const components = [
   'input', 'modal', 'number', 'popper', 'progress',
   'radio',
   'select', 'steps', 'timeline', 'switch', 'badge', 'message', 'alert',
-  'range', 'loading'
+  'range', 'loading', 'list', 'upload'
 ]
 
 const MenuDatasource = [
@@ -79,6 +81,8 @@ const inner = (
       <AlertDemo />
       <RangeDemo />
       <LoadingDemo />
+      <ListDemo />
+      <UploadDemo />
     </div>
   </div>
 )

@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import ReactDOM from 'react-dom'
-import Radio from '../../src/components/Radio/index.tsx'
+import { Radio } from '../../src'
 
 
 export default function (props) {

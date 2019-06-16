@@ -9,6 +9,7 @@ export interface MenuProps {
 
 export interface IMenuItem {
   label: string
+  key: string
   handler: React.MouseEventHandler
   children: IMenuItem[]
   hide?: boolean
@@ -17,6 +18,7 @@ export interface IMenuItem {
 export interface MenuState {
   type: string
   datasource: Array<IMenuItem>
+  selected?: string
 }
 
 export default class extends React.Component<MenuProps> {
@@ -38,10 +40,10 @@ export default class extends React.Component<MenuProps> {
     return null
   }
 
-  handleItemClick (e: React.MouseEvent, item: IMenuItem) {
+  handleItemClick (e: React.MouseEvent, item: IMenuItem, key: number) {
     item.handler && item.handler(e)
     item.hide = !item.hide
-    this.setState({})
+    this.setState({key: item.key})
   }
 
 
@@ -49,9 +51,9 @@ export default class extends React.Component<MenuProps> {
     return datasource.map((item: IMenuItem, key: number) => {
       return (
         <div key={key}>
-          <div className="menu-label" onClick={(e) => {this.handleItemClick(e, item)}}>{item.label}</div>
+          <div className="menu-label" onClick={(e) => {this.handleItemClick(e, item, key)}}>{item.label}</div>
           <div className={
-            classnames('sub-menu')}>
+            classnames('sub-menu', this.state.selected === item.key ? 'selected' : '')}>
             <div className={
               classnames(item.hide ? 'hide-children' : '')
             }>

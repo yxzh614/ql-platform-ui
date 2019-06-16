@@ -1,7 +1,6 @@
-import React from 'react';
+import React from 'react'
 import ReactDOM from 'react-dom'
-import Input from '../../src/components/Input/index.tsx'
-import Icon from '../../src/components/Icon/index.tsx'
+import { Icon } from '../../src'
 
 export default class extends React.Component {
     state = {

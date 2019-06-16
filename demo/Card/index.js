@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom'
-import Card from '../../src/components/Card/index.tsx'
+import { Card } from '../../src'
 
 export default class extends React.Component {
     render () {

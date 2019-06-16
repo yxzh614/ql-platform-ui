@@ -1,9 +1,8 @@
-import React from 'react';
-import ReactDOM from 'react-dom'
-import Button from '../../src/components/Button/index.tsx'
+import React from 'react'
+import { Button } from '../../src'
 
 export default class extends React.Component {
-    handleClick = (e) => {
+    handleClick = (e: React.MouseEvent) => {
       console.log('你点击了按钮', e)
     }
     render () {

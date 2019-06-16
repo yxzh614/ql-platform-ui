@@ -8,7 +8,6 @@ export interface InputProps {
   disabled: boolean
   value: string
   defaultValue: string
-  borderStyle: string
   className: string
   clearable: boolean
   onChange: React.ChangeEventHandler<HTMLInputElement | HTMLTextAreaElement>

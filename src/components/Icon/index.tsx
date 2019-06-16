@@ -1,4 +1,4 @@
-import * as React from 'react'
+import React from 'react';
 import 'zenticons/lib/index.css'
 import classnames from 'classnames'
 export type IconProps = {
