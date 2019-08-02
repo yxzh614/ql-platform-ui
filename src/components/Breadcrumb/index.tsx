@@ -1,6 +1,6 @@
 import Breadcrumb from './Breadcrumb'
 
-export {
-    Breadcrumb
-}
+export * from './Breadcrumb'
+export * from './BreadcrumbItem'
+
 export default Breadcrumb

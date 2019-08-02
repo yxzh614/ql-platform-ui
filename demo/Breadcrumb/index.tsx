@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom'
 import { Breadcrumb } from '../../src'
-
+import { BreadcrumbProps } from '../../src'
 export default class extends React.Component {
 
     state = {

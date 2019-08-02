@@ -11,7 +11,7 @@ module.exports = {
   },
   resolve: {
       extensions: ['.ts', '.tsx', '.js', '.css', '.less'],     // 定义在该数组中的文件后缀不需要显示给出
-      mainFiles: ['index', 'index.tsx']
+      mainFiles: ['index']
   },
   plugins: [
     new CleanWebpackPlugin(['dist']),

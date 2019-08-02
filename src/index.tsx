@@ -1,4 +1,4 @@
-import Breadcrumb from './components/breadcrumb';
+export * from './components/breadcrumb'
 import Button from './components/button';
 import Card from './components/Card';
 import Checkbox from './components/Checkbox';
@@ -23,7 +23,6 @@ import List from './components/List'
 import Upload from './components/Upload'
 
 export {
-  Breadcrumb,
   Button,
   Card,
   Checkbox,

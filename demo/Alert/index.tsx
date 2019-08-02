@@ -1,5 +1,6 @@
 import React from 'react'
 import { Alert } from '../../src'
+import {AlertProps} from '../../src/components/Alert'
 
 export default class extends React.Component {
     state = {
